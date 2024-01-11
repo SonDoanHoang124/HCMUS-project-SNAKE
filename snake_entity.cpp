@@ -91,7 +91,7 @@ void move_right(char grid[][GRID_SIZE])
 
 void move_left(char grid[][GRID_SIZE])
 {
-    if (snake[SIZE_SNAKE - 1].x - 1 == GRID_SIZE)
+    if (snake[SIZE_SNAKE - 1].x - 1 == 0)
         process_dead();
     else
     {
@@ -123,7 +123,7 @@ void move_left(char grid[][GRID_SIZE])
 
 void move_up(char grid[][GRID_SIZE])
 {
-    if (snake[SIZE_SNAKE - 1].y - 1 == GRID_SIZE)
+    if (snake[SIZE_SNAKE - 1].y - 1 == 0)
         process_dead();
     else
     {
